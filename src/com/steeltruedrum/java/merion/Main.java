@@ -16,5 +16,9 @@ public class Main {
 
         Cat cat = new Cat();
         cat.voice();
+
+        // Lesson 7 - Package
+        com.steeltruedrum.java.merion.lesson7.Cat catFromLesson7 = new com.steeltruedrum.java.merion.lesson7.Cat();
+        catFromLesson7.voice();
     }
 }
