@@ -38,6 +38,7 @@ public class Main {
         dog.getDogPosition();
 
         Dog homelessDog = Dog.ofHomeless(10);
+        homelessDog.voice();
 
         // Lesson 10 - Inheritance
         Duck duck = new Duck();

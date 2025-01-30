@@ -19,4 +19,9 @@ public class Cat extends Animal {
         if (this.weight == null) return 300;
         return getHeightCoefficient(this.weight);
     }
+
+    @Override
+    public void voice() {
+        System.out.println("Meow!");
+    }
 }
