@@ -30,8 +30,30 @@ public class Dog extends Animal {
         return dog;
     }
 
+    public static Dog of(String name, Integer weight) {
+        return new Dog(name, weight);
+    }
+
     @Override
     public void voice() {
         System.out.println("Woof!");
+    }
+
+    public static Dog[] randomArray() {
+        Dog[] dogs = new Dog[3];
+        dogs[0] = Dog.of("Sharik", 3);
+        dogs[1] = Dog.of("Bobik", 1);
+        dogs[2] = Dog.of("Tuzik", 5);
+
+        return dogs;
+    }
+
+    @Override
+    public String toString() {
+        return "Dog{" +
+                "name='" + name + '\'' +
+                ", weight=" + weight +
+                ", currentPosition=" + currentPosition +
+                '}';
     }
 }
