@@ -1,12 +1,14 @@
 package com.steeltruedrum.java.merion.lesson8;
 
 public class Cat extends Animal {
+    public static final String CAT_VOICE = "Meow!";
+
     public Cat(String name, Integer weight) {
-        super(name, weight);
+        super(name, weight, MoveType.WALK);
     }
 
     public Cat() {
-        super();
+        super(MoveType.WALK);
     }
 
     private Integer getHeightCoefficient(Integer weight) {
@@ -23,6 +25,6 @@ public class Cat extends Animal {
 
     @Override
     public void voice() {
-        System.out.println("Meow!");
+        System.out.println(CAT_VOICE);
     }
 }

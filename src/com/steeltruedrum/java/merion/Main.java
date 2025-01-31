@@ -45,14 +45,14 @@ public class Main {
 //        homelessDog.voice();
 //
 //        // Lesson 10 - Inheritance
-//        Duck duck = new Duck();
-//        duck.voice();
-//        duck.takeOff();
-//        duck.showSpeed();
-//        duck.isTheBirdFlying();
-//        duck.landing();
-//        duck.showSpeed();
-//        duck.isTheBirdFlying();
+        Duck duck = new Duck();
+        duck.voice();
+        duck.takeOff();
+        duck.showSpeed();
+        duck.isTheBirdFlying();
+        duck.landing();
+        duck.showSpeed();
+        duck.isTheBirdFlying();
 
 //        // Lesson 11 - Arrays
 //        List<Dog> dogsOfHomeless = Arrays.asList(new Dog[] {
@@ -76,12 +76,21 @@ public class Main {
 //        System.out.println(dogsOfHomeless.size());
 //        System.out.println(dogsOfHomeless.get(2));
 
-          // Lesson 16 - Switch
+        // Lesson 16 - Switch
 //        for (int i = 0; i < 50; i++) {
 //            SwitchExample.run();
 //        }
 
+        // Lesson 20 - equals() & hashCode()
+        Dog dogSharik = new Dog("Sharik", 5);
+        Dog dogBobik = new Dog("Bobik", 3);
+        Dog dogSharikVar1 = new Dog("Sharik", 5);
+        System.out.println(dogSharik.equals(dogBobik));
+        System.out.println(dogSharik.equals(dogSharikVar1));
 
+        // Lesson 22 - Enum
+        System.out.println(" ");
+        System.out.println(duck.getMoveType());
 
 
     }

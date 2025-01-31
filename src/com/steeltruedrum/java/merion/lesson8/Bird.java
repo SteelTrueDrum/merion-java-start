@@ -3,15 +3,15 @@ package com.steeltruedrum.java.merion.lesson8;
 public class Bird extends Animal {
     protected Boolean flyModeActive = false;
 
-    public void takeOff() {
+    public Bird() {
+        super(MoveType.FLY);
+    }
+
+    public final void takeOff() {
         this.flyModeActive = true;
     }
 
-    public Bird() {
-        this.canFly = true;
-    }
-
-    public void landing() {
+    public final void landing() {
         this.flyModeActive = false;
     }
 
