@@ -1,10 +1,14 @@
 package com.steeltruedrum.java.merion;
 
+import com.steeltruedrum.java.merion.lesson16.SwitchExample;
 import com.steeltruedrum.java.merion.lesson5.POJO;
 import com.steeltruedrum.java.merion.lesson8.Animal;
 import com.steeltruedrum.java.merion.lesson8.Cat;
 import com.steeltruedrum.java.merion.lesson8.Dog;
 import com.steeltruedrum.java.merion.lesson8.Duck;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -50,24 +54,35 @@ public class Main {
 //        duck.showSpeed();
 //        duck.isTheBirdFlying();
 
-        // Lesson 11 - Arrays
-        Dog[] dogsOfHomeless = new Dog[] {
-                Dog.ofHomeless(1),
-                Dog.ofHomeless(3),
-                Dog.ofHomeless(6),
-                Dog.ofHomeless(4)
-        };
+//        // Lesson 11 - Arrays
+//        List<Dog> dogsOfHomeless = Arrays.asList(new Dog[] {
+//                Dog.ofHomeless(1),
+//                Dog.ofHomeless(3),
+//                Dog.ofHomeless(6),
+//                Dog.ofHomeless(4)
+//        });
+//
+//        for (Dog dog : dogsOfHomeless) {
+//            System.out.println(dog);
+//        }
+//
+//        System.out.println("------");
+//        List<Dog> dogs = Dog.randomArray();
+//
+//        for (Dog dog : dogs) {
+//            System.out.println(dog);
+//        }
+//
+//        System.out.println(dogsOfHomeless.size());
+//        System.out.println(dogsOfHomeless.get(2));
 
-        for (Dog dog : dogsOfHomeless) {
-            System.out.println(dog);
-        }
+          // Lesson 16 - Switch
+//        for (int i = 0; i < 50; i++) {
+//            SwitchExample.run();
+//        }
 
-        System.out.println("------");
-        Dog[] dogs = Dog.randomArray();
 
-        for (Dog dog : dogs) {
-            System.out.println(dog);
-        }
+
 
     }
 }

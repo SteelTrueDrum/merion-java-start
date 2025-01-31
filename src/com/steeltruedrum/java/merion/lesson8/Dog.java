@@ -1,11 +1,16 @@
 package com.steeltruedrum.java.merion.lesson8;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
 public class Dog extends Animal {
     public Dog(String name, Integer weight) {
         super(name, weight);
     }
 
     public Dog() {
+        super();
     }
 
     /**
@@ -39,11 +44,14 @@ public class Dog extends Animal {
         System.out.println("Woof!");
     }
 
-    public static Dog[] randomArray() {
-        Dog[] dogs = new Dog[3];
-        dogs[0] = Dog.of("Sharik", 3);
-        dogs[1] = Dog.of("Bobik", 1);
-        dogs[2] = Dog.of("Tuzik", 5);
+    public static List<Dog> randomArray() {
+        List<Dog> dogs = new ArrayList<>();
+
+        Integer arraySize = (new Random()).nextInt(2, 10);
+
+        dogs.add(Dog.of("Sharik", 2));
+        dogs.add(Dog.of("Bobik", 3));
+        dogs.add(Dog.of("Tuzik", 4));
 
         return dogs;
     }

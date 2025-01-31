@@ -6,6 +6,7 @@ public class Cat extends Animal {
     }
 
     public Cat() {
+        super();
     }
 
     private Integer getHeightCoefficient(Integer weight) {
