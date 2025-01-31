@@ -1,6 +1,9 @@
 package com.steeltruedrum.java.merion;
 
 import com.steeltruedrum.java.merion.lesson16.SwitchExample;
+import com.steeltruedrum.java.merion.lesson24.TypeConversion;
+import com.steeltruedrum.java.merion.lesson28.AnonClass;
+import com.steeltruedrum.java.merion.lesson30.LambdaExample;
 import com.steeltruedrum.java.merion.lesson5.POJO;
 import com.steeltruedrum.java.merion.lesson8.Animal;
 import com.steeltruedrum.java.merion.lesson8.Cat;
@@ -82,9 +85,9 @@ public class Main {
 //        }
 
         // Lesson 20 - equals() & hashCode()
-        Dog dogSharik = new Dog("Sharik", 5);
-        Dog dogBobik = new Dog("Bobik", 3);
-        Dog dogSharikVar1 = new Dog("Sharik", 5);
+        Dog dogSharik = new Dog("Sharik", new Animal.AnimalWeight(5, Animal.AnimalWeight.WeightType.KG));
+        Dog dogBobik = new Dog("Bobik", new Animal.AnimalWeight(3, Animal.AnimalWeight.WeightType.KG));
+        Dog dogSharikVar1 = new Dog("Sharik", new Animal.AnimalWeight(3, Animal.AnimalWeight.WeightType.KG));
         System.out.println(dogSharik.equals(dogBobik));
         System.out.println(dogSharik.equals(dogSharikVar1));
 
@@ -92,6 +95,22 @@ public class Main {
         System.out.println(" ");
         System.out.println(duck.getMoveType());
 
+        // Lesson 24 - Type Conversion
+        System.out.println(" ");
+        TypeConversion.run();
+
+        // Lesson 28 - Anonymous Class
+        AnonClass.run();
+
+        // Lesson 29 - Exception
+//        try {
+//            Dog dog22 = new Dog("Vasya", new Animal.AnimalWeight(-10, Animal.AnimalWeight.WeightType.KG));
+//        } catch (Animal.WeightException e) {
+//            e.printStackTrace();
+//        }
+
+        // Lesson 30 - Lambda Expression
+        LambdaExample.run();
 
     }
 }

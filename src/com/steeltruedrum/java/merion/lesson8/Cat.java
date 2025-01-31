@@ -3,7 +3,7 @@ package com.steeltruedrum.java.merion.lesson8;
 public class Cat extends Animal {
     public static final String CAT_VOICE = "Meow!";
 
-    public Cat(String name, Integer weight) {
+    public Cat(String name, AnimalWeight weight) {
         super(name, weight, MoveType.WALK);
     }
 
@@ -20,7 +20,7 @@ public class Cat extends Animal {
 
     public Integer getJumpHeight() {
         if (this.weight == null) return 300;
-        return getHeightCoefficient(this.weight);
+        return getHeightCoefficient(this.weight.getValue());
     }
 
     @Override

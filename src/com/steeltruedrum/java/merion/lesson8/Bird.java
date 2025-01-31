@@ -1,6 +1,6 @@
 package com.steeltruedrum.java.merion.lesson8;
 
-public class Bird extends Animal {
+public abstract class Bird extends Animal implements Flight{
     protected Boolean flyModeActive = false;
 
     public Bird() {

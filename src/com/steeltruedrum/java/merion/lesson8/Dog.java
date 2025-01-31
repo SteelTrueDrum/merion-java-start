@@ -7,7 +7,7 @@ import java.util.Random;
 public class Dog extends Animal {
     public static final String DOG_VOICE = "Woof!";
 
-    public Dog(String name, Integer weight) {
+    public Dog(String name, AnimalWeight weight) {
         super(name, weight, MoveType.WALK);
     }
 
@@ -31,13 +31,13 @@ public class Dog extends Animal {
         System.out.println("Current position: " + currentPosition);
     }
 
-    public static Dog ofHomeless(Integer weight) {
+    public static Dog ofHomeless(AnimalWeight weight) {
         Dog dog = new Dog();
         dog.weight = weight;
         return dog;
     }
 
-    public static Dog of(String name, Integer weight) {
+    public static Dog of(String name, AnimalWeight weight) {
         return new Dog(name, weight);
     }
 
@@ -51,9 +51,9 @@ public class Dog extends Animal {
 
         Integer arraySize = (new Random()).nextInt(2, 10);
 
-        dogs.add(Dog.of("Sharik", 2));
-        dogs.add(Dog.of("Bobik", 3));
-        dogs.add(Dog.of("Tuzik", 4));
+        dogs.add(Dog.of("Sharik", new AnimalWeight(3, AnimalWeight.WeightType.KG)));
+        dogs.add(Dog.of("Bobik", new AnimalWeight(3, AnimalWeight.WeightType.KG)));
+        dogs.add(Dog.of("Tuzik", new AnimalWeight(2, AnimalWeight.WeightType.KG)));
 
         return dogs;
     }
@@ -65,5 +65,9 @@ public class Dog extends Animal {
                 ", weight=" + weight +
                 ", currentPosition=" + currentPosition +
                 '}';
+    }
+
+    public void setWeight(int i, AnimalWeight.WeightType weightType) {
+
     }
 }
