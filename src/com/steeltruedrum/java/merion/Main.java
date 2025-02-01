@@ -5,6 +5,7 @@ import com.steeltruedrum.java.merion.lesson24.TypeConversion;
 import com.steeltruedrum.java.merion.lesson28.AnonClass;
 import com.steeltruedrum.java.merion.lesson30.LambdaExample;
 import com.steeltruedrum.java.merion.lesson31.StreamExample;
+import com.steeltruedrum.java.merion.lesson32.MyFirstThread;
 import com.steeltruedrum.java.merion.lesson5.POJO;
 import com.steeltruedrum.java.merion.lesson8.Animal;
 import com.steeltruedrum.java.merion.lesson8.Cat;
@@ -114,7 +115,18 @@ public class Main {
         LambdaExample.run();
 
         // Lesson 31 - Stream API
-        StreamExample.run();
+//        StreamExample.run();
+
+        // Lesson 32 - Threads
+        MyFirstThread myFirstThread = new MyFirstThread();
+        myFirstThread.start();
+
+        MyFirstThread.showThreads();
+        MyFirstThread.showThreads();
+        MyFirstThread.showThreads();
+        MyFirstThread.showThreads();
+        MyFirstThread.showThreads();
+
 
     }
 }
