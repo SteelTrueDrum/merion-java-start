@@ -4,6 +4,7 @@ import com.steeltruedrum.java.merion.lesson16.SwitchExample;
 import com.steeltruedrum.java.merion.lesson24.TypeConversion;
 import com.steeltruedrum.java.merion.lesson28.AnonClass;
 import com.steeltruedrum.java.merion.lesson30.LambdaExample;
+import com.steeltruedrum.java.merion.lesson31.StreamExample;
 import com.steeltruedrum.java.merion.lesson5.POJO;
 import com.steeltruedrum.java.merion.lesson8.Animal;
 import com.steeltruedrum.java.merion.lesson8.Cat;
@@ -111,6 +112,9 @@ public class Main {
 
         // Lesson 30 - Lambda Expression
         LambdaExample.run();
+
+        // Lesson 31 - Stream API
+        StreamExample.run();
 
     }
 }
